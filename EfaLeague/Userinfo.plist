@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>teamstatus</key>
+	<integer>2</integer>
+	<key>id</key>
+	<string></string>
+	<key>loginId</key>
+	<string></string>
+	<key>loginName</key>
+	<string></string>
+	<key>password</key>
+	<string></string>
+	<key>name</key>
+	<string>姓名</string>
+	<key>cards</key>
+	<string>身份证号</string>
+	<key>telephone</key>
+	<string>手机号</string>
+	<key>policyno</key>
+	<string>保单号</string>
+	<key>sex</key>
+	<string>性别</string>
+	<key>height</key>
+	<string>身高</string>
+	<key>weight</key>
+	<string>体重</string>
+	<key>age</key>
+	<string>年龄</string>
+	<key>position</key>
+	<string>位置</string>
+	<key>photo</key>
+	<string></string>
+</dict>
+</plist>

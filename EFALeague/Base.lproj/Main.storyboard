@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bzz-Du-fqv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8fD-iy-bqS">
+            <objects>
+                <tabBarController id="bzz-Du-fqv" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WHX-7P-fOr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RT8-ew-9Dg" kind="relationship" relationship="viewControllers" id="P65-qF-g8v"/>
+                        <segue destination="t2L-ND-t6Q" kind="relationship" relationship="viewControllers" id="ZH1-E9-nJG"/>
+                        <segue destination="1Rn-ek-Wdh" kind="relationship" relationship="viewControllers" id="bso-DX-9nQ"/>
+                        <segue destination="KDm-Ig-vaJ" kind="relationship" relationship="viewControllers" id="baE-Pg-mtj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3p9-PF-T1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2108" y="-127"/>
+        </scene>
+        <!--赛事-->
+        <scene sceneID="RIM-fa-yRl">
+            <objects>
+                <navigationController id="t2L-ND-t6Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" id="uxb-0Y-GLe"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2js-R6-de3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="No9-lq-Yzo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4M-yQ-rx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-416" y="218"/>
+        </scene>
+        <!--个人-->
+        <scene sceneID="ml0-Gb-2aS">
+            <objects>
+                <navigationController id="KDm-Ig-vaJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人" image="ProfileTabIcon" id="gul-KA-Wf4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kSu-sU-Kw7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="atH-XA-2gR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wS3-UM-x3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-625" y="1891"/>
+        </scene>
+        <!--球队-->
+        <scene sceneID="9Nd-Hj-wd1">
+            <objects>
+                <navigationController id="1Rn-ek-Wdh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="球队" image="TeamTabIcon" id="e6K-Ia-31a"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f5D-JH-nZ1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="dbV-H8-MgJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfr-1z-uEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-549" y="1001"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="paL-pp-ECJ">
+            <objects>
+                <navigationController id="RT8-ew-9Dg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="MainTabIcon" id="hyI-lX-5N0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kRg-et-LnK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="nKs-WZ-xqa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5q-Ne-reI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="-785"/>
+        </scene>
+        <!--EFALeague-->
+        <scene sceneID="cJD-h6-qfZ">
+            <objects>
+                <viewController id="B5a-pn-RVw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0dY-5L-XtH"/>
+                        <viewControllerLayoutGuide type="bottom" id="tf8-oj-UtJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pj9-FC-aW0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="EFALeague" id="CwA-Nh-y7j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ucD-pd-dvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1335" y="523"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MainTabIcon" width="50" height="50"/>
+        <image name="MatchTabIcon" width="50" height="50"/>
+        <image name="ProfileTabIcon" width="50" height="50"/>
+        <image name="TeamTabIcon" width="50" height="50"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="atH-XA-2gR"/>
+    </inferredMetricsTieBreakers>
+</document>

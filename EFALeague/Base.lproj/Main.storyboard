@@ -19,10 +19,10 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RT8-ew-9Dg" kind="relationship" relationship="viewControllers" id="P65-qF-g8v"/>
-                        <segue destination="t2L-ND-t6Q" kind="relationship" relationship="viewControllers" id="ZH1-E9-nJG"/>
-                        <segue destination="1Rn-ek-Wdh" kind="relationship" relationship="viewControllers" id="bso-DX-9nQ"/>
-                        <segue destination="KDm-Ig-vaJ" kind="relationship" relationship="viewControllers" id="baE-Pg-mtj"/>
+                        <segue destination="gtD-ad-ael" kind="relationship" relationship="viewControllers" id="dVR-Y4-u5L"/>
+                        <segue destination="24S-RD-ik2" kind="relationship" relationship="viewControllers" id="6fA-Eh-qP0"/>
+                        <segue destination="ctY-ae-jGF" kind="relationship" relationship="viewControllers" id="P7g-oX-9y7"/>
+                        <segue destination="yEh-Dc-pcN" kind="relationship" relationship="viewControllers" id="mSB-8b-ez4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3p9-PF-T1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -30,100 +30,189 @@
             <point key="canvasLocation" x="-2108" y="-127"/>
         </scene>
         <!--赛事-->
-        <scene sceneID="RIM-fa-yRl">
+        <scene sceneID="2CF-N3-IOD">
             <objects>
-                <navigationController id="t2L-ND-t6Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" id="uxb-0Y-GLe"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2js-R6-de3">
+                <navigationController id="24S-RD-ik2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" id="H4c-VM-nfC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="yA4-x8-fY0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="No9-lq-Yzo"/>
+                        <segue destination="p2B-0n-gjA" kind="relationship" relationship="rootViewController" id="1Jj-hj-Wkp"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P4M-yQ-rx1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jV8-yu-oa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-416" y="218"/>
+            <point key="canvasLocation" x="-188" y="130"/>
         </scene>
         <!--个人-->
-        <scene sceneID="ml0-Gb-2aS">
+        <scene sceneID="5bo-AE-fpy">
             <objects>
-                <navigationController id="KDm-Ig-vaJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="个人" image="ProfileTabIcon" id="gul-KA-Wf4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kSu-sU-Kw7">
+                <navigationController id="yEh-Dc-pcN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="个人" image="ProfileTabIcon" id="HH5-tl-p3l"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="r7x-ff-hPJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.070588235289999995" green="0.15686274510000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="atH-XA-2gR"/>
+                        <segue destination="9hR-E5-U1l" kind="relationship" relationship="rootViewController" id="4xC-UH-ZLJ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wS3-UM-x3Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MH9-cb-PmE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-625" y="1891"/>
+            <point key="canvasLocation" x="-1934" y="1049"/>
         </scene>
         <!--球队-->
-        <scene sceneID="9Nd-Hj-wd1">
+        <scene sceneID="ETO-zH-Haj">
             <objects>
-                <navigationController id="1Rn-ek-Wdh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="球队" image="TeamTabIcon" id="e6K-Ia-31a"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f5D-JH-nZ1">
+                <navigationController id="ctY-ae-jGF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="球队" image="TeamTabIcon" id="Z7D-pI-zLb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QRT-7I-LWY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="dbV-H8-MgJ"/>
+                        <segue destination="Qvb-gu-8xO" kind="relationship" relationship="rootViewController" id="Quu-jr-2TG"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dfr-1z-uEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vU8-gr-Dr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-549" y="1001"/>
+            <point key="canvasLocation" x="-697" y="865"/>
         </scene>
-        <!--首页-->
-        <scene sceneID="paL-pp-ECJ">
+        <!--EFA League-->
+        <scene sceneID="j1L-kE-Oow">
             <objects>
-                <navigationController id="RT8-ew-9Dg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="MainTabIcon" id="hyI-lX-5N0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kRg-et-LnK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="B5a-pn-RVw" kind="relationship" relationship="rootViewController" id="nKs-WZ-xqa"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Q5q-Ne-reI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-420" y="-785"/>
-        </scene>
-        <!--EFALeague-->
-        <scene sceneID="cJD-h6-qfZ">
-            <objects>
-                <viewController id="B5a-pn-RVw" sceneMemberID="viewController">
+                <viewController id="p2B-0n-gjA" customClass="MatchPageViewController" customModule="EFALeague" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0dY-5L-XtH"/>
-                        <viewControllerLayoutGuide type="bottom" id="tf8-oj-UtJ"/>
+                        <viewControllerLayoutGuide type="top" id="925-74-CNP"/>
+                        <viewControllerLayoutGuide type="bottom" id="iGf-z0-Xao"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Pj9-FC-aW0">
+                    <view key="view" contentMode="scaleToFill" id="LpS-fa-EgP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="EFALeague" id="CwA-Nh-y7j"/>
+                    <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" id="FLh-lG-mFi"/>
+                    <navigationItem key="navigationItem" title="EFA League" id="D4Q-sp-LKs">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="9Re-oV-0Bo">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onBackCallBack" destination="p2B-0n-gjA" id="jJp-k6-pHp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ucD-pd-dvp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h1f-xg-AM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="523"/>
+            <point key="canvasLocation" x="977" y="154"/>
+        </scene>
+        <!--EFA League-->
+        <scene sceneID="neN-Ac-WYK">
+            <objects>
+                <viewController id="Qvb-gu-8xO" customClass="TeamPageViewController" customModule="EFALeague" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jbn-90-iZa"/>
+                        <viewControllerLayoutGuide type="bottom" id="DaR-jb-lUU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ByV-1K-8sp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="球队" image="TeamTabIcon" id="c6h-MR-yze"/>
+                    <navigationItem key="navigationItem" title="EFA League" id="kVC-ry-KV1">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="mT5-Cv-01t">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onBackCallBack" destination="Qvb-gu-8xO" id="FzT-iG-QAj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QmX-Mg-9Yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073" y="983"/>
+        </scene>
+        <!--EFA League-->
+        <scene sceneID="QHf-k7-wat">
+            <objects>
+                <viewController id="9hR-E5-U1l" customClass="ProfilePageViewControll" customModule="EFALeague" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="435-rc-i3s"/>
+                        <viewControllerLayoutGuide type="bottom" id="6TE-Wh-Hfe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7f2-EF-qkP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="个人" image="ProfileTabIcon" id="Fnt-4f-bee"/>
+                    <navigationItem key="navigationItem" title="EFA League" id="vi1-Dj-eN0">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="v0x-pS-VdU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onBackCallBack" destination="9hR-E5-U1l" id="cPo-oD-c0X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bog-kz-NQJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-980" y="1886"/>
+        </scene>
+        <!--EFA League-->
+        <scene sceneID="lm9-Ka-OLv">
+            <objects>
+                <viewController id="hlG-in-7T0" customClass="MainPageViewController" customModule="EFALeague" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="egX-i4-ra0"/>
+                        <viewControllerLayoutGuide type="bottom" id="OYR-kK-zar"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XhJ-Km-9vb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="EFA League" id="F3h-sX-jnG">
+                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="iuA-Sj-9Hn">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onBackCallBack" destination="hlG-in-7T0" id="hNQ-LS-yHE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lQy-jb-Bpy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="-631"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="dfS-M4-RLP">
+            <objects>
+                <navigationController id="gtD-ad-ael" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="MainTabIcon" id="iKH-gU-nzj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AMC-wL-LEL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hlG-in-7T0" kind="relationship" relationship="rootViewController" id="SDe-Ft-wcv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fYW-mK-Jwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-161" y="-631"/>
         </scene>
     </scenes>
     <resources>
-        <image name="MainTabIcon" width="50" height="50"/>
-        <image name="MatchTabIcon" width="50" height="50"/>
-        <image name="ProfileTabIcon" width="50" height="50"/>
-        <image name="TeamTabIcon" width="50" height="50"/>
+        <image name="MainTabIcon" width="25" height="25"/>
+        <image name="MatchTabIcon" width="25" height="25"/>
+        <image name="ProfileTabIcon" width="25" height="25"/>
+        <image name="TeamTabIcon" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="atH-XA-2gR"/>
-    </inferredMetricsTieBreakers>
 </document>

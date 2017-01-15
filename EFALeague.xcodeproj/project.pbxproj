@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7566F2D21E2B27A50082CF28 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566F2D11E2B27A50082CF28 /* MainPageViewController.swift */; };
+		7566F2D41E2B396B0082CF28 /* MatchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566F2D31E2B396B0082CF28 /* MatchPageViewController.swift */; };
+		7566F2D61E2B3A4D0082CF28 /* TeamPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566F2D51E2B3A4D0082CF28 /* TeamPageViewController.swift */; };
+		7566F2D81E2B3A910082CF28 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566F2D71E2B3A910082CF28 /* ProfilePageViewController.swift */; };
 		75DF42F11E27ED67005C5B50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF42F01E27ED67005C5B50 /* AppDelegate.swift */; };
-		75DF42F31E27ED67005C5B50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF42F21E27ED67005C5B50 /* ViewController.swift */; };
 		75DF42F61E27ED67005C5B50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DF42F41E27ED67005C5B50 /* Main.storyboard */; };
 		75DF42F81E27ED67005C5B50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF42F71E27ED67005C5B50 /* Assets.xcassets */; };
 		75DF42FB1E27ED67005C5B50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75DF42F91E27ED67005C5B50 /* LaunchScreen.storyboard */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7566F2D11E2B27A50082CF28 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		7566F2D31E2B396B0082CF28 /* MatchPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPageViewController.swift; sourceTree = "<group>"; };
+		7566F2D51E2B3A4D0082CF28 /* TeamPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPageViewController.swift; sourceTree = "<group>"; };
+		7566F2D71E2B3A910082CF28 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		75DF42ED1E27ED67005C5B50 /* EFALeague.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFALeague.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75DF42F01E27ED67005C5B50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75DF42F21E27ED67005C5B50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		75DF42F51E27ED67005C5B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75DF42F71E27ED67005C5B50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75DF42FA1E27ED67005C5B50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				75DF42F01E27ED67005C5B50 /* AppDelegate.swift */,
-				75DF42F21E27ED67005C5B50 /* ViewController.swift */,
 				75DF42F41E27ED67005C5B50 /* Main.storyboard */,
+				7566F2D51E2B3A4D0082CF28 /* TeamPageViewController.swift */,
+				7566F2D71E2B3A910082CF28 /* ProfilePageViewController.swift */,
 				75DF42F71E27ED67005C5B50 /* Assets.xcassets */,
 				75DF42F91E27ED67005C5B50 /* LaunchScreen.storyboard */,
 				75DF42FC1E27ED67005C5B50 /* Info.plist */,
+				7566F2D11E2B27A50082CF28 /* MainPageViewController.swift */,
+				7566F2D31E2B396B0082CF28 /* MatchPageViewController.swift */,
 			);
 			path = EFALeague;
 			sourceTree = "<group>";
@@ -262,7 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DF42F31E27ED67005C5B50 /* ViewController.swift in Sources */,
+				7566F2D81E2B3A910082CF28 /* ProfilePageViewController.swift in Sources */,
+				7566F2D21E2B27A50082CF28 /* MainPageViewController.swift in Sources */,
+				7566F2D41E2B396B0082CF28 /* MatchPageViewController.swift in Sources */,
+				7566F2D61E2B3A4D0082CF28 /* TeamPageViewController.swift in Sources */,
 				75DF42F11E27ED67005C5B50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +526,7 @@
 				75DF43171E27ED67005C5B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75DF43181E27ED67005C5B50 /* Build configuration list for PBXNativeTarget "EFALeagueTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +535,7 @@
 				75DF431A1E27ED67005C5B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75DF431B1E27ED67005C5B50 /* Build configuration list for PBXNativeTarget "EFALeagueUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +544,7 @@
 				75DF431D1E27ED67005C5B50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

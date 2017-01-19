@@ -34,7 +34,7 @@
             <objects>
                 <navigationController id="24S-RD-ik2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" id="H4c-VM-nfC"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="yA4-x8-fY0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yA4-x8-fY0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,7 +52,7 @@
             <objects>
                 <navigationController id="yEh-Dc-pcN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="个人" image="ProfileTabIcon" id="HH5-tl-p3l"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="r7x-ff-hPJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r7x-ff-hPJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235289999995" green="0.15686274510000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,7 +70,7 @@
             <objects>
                 <navigationController id="ctY-ae-jGF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="球队" image="TeamTabIcon" id="Z7D-pI-zLb"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QRT-7I-LWY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QRT-7I-LWY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -195,7 +195,7 @@
             <objects>
                 <navigationController id="gtD-ad-ael" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="MainTabIcon" id="iKH-gU-nzj"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AMC-wL-LEL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AMC-wL-LEL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>

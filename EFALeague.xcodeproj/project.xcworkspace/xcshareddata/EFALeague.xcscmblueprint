@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2D3A2CC96939890CDDD275B0A475624C1D3CCAFB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2D3A2CC96939890CDDD275B0A475624C1D3CCAFB" : 9223372036854775807,
+    "FD7CCC80604C6B3E5950B77B6BA7A5619AA2D52D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7CF8334D-5E53-4A2C-B4F7-CCF31137EA26",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2D3A2CC96939890CDDD275B0A475624C1D3CCAFB" : "efaleague-ios\/",
+    "FD7CCC80604C6B3E5950B77B6BA7A5619AA2D52D" : "efaleague-ios\/efafootball-web\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EFALeague",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EFALeague.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jonydev\/efaleague-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2D3A2CC96939890CDDD275B0A475624C1D3CCAFB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:jonydev\/efafootball-web.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FD7CCC80604C6B3E5950B77B6BA7A5619AA2D52D"
+    }
+  ]
+}

@@ -12,8 +12,9 @@ import WebKit
 
 class MainPageViewController : UIViewController, WKScriptMessageHandler {
     var webView: WKWebView?
-    var contentCallback : String = "mainPageViewCallBack"
+    var contentCallback : String = "callbackHandler"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/home.html"
+//    var homeUrl : String = "http://120.77.159.148:3000/efafootball-web/home.html"
     
     override func loadView() {
         let contentController = WKUserContentController()
@@ -27,20 +28,28 @@ class MainPageViewController : UIViewController, WKScriptMessageHandler {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        webView!.load(URLRequest(url: URL(string: homeUrl)!))
-        
-        self.navigationController?.navigationItem.leftBarButtonItem?.title = "AAAAAAA"
+        self.webView!.load(URLRequest(url: URL(string: homeUrl)!))
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if(message.name == contentCallback) {
-            print("javascript call success")
+        print("javascript call success")
+        if let messageBody:NSDictionary = message.body as? NSDictionary {
+            let functionToRun = String(describing: messageBody.value(forKey: "functionToRun")!);
+            switch(functionToRun) {
+            case "joinTeam":
+                print ("joinTeam")
+                self.tabBarController?.selectedIndex = 2
+            case "matchSignUp":
+                print ("matchSignUp")
+                self.tabBarController?.selectedIndex = 1
+            default:
+                return {}();
+            }
         }
     }
     
     @IBAction func onBackCallBack() {
+        print("goBack click")
         if(webView?.canGoBack)! {
             webView?.goBack()
         }

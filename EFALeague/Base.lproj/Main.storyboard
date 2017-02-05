@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bzz-Du-fqv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bzz-Du-fqv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,6 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.33394943690000001" green="0.57744330170000002" blue="0.3804788355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="gtD-ad-ael" kind="relationship" relationship="viewControllers" id="dVR-Y4-u5L"/>
@@ -27,14 +28,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3p9-PF-T1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2108" y="-127"/>
+            <point key="canvasLocation" x="-2106" y="-179"/>
         </scene>
         <!--赛事-->
         <scene sceneID="2CF-N3-IOD">
             <objects>
                 <navigationController id="24S-RD-ik2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" id="H4c-VM-nfC"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yA4-x8-fY0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="yA4-x8-fY0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -52,7 +53,7 @@
             <objects>
                 <navigationController id="yEh-Dc-pcN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="个人" image="ProfileTabIcon" id="HH5-tl-p3l"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r7x-ff-hPJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="r7x-ff-hPJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235289999995" green="0.15686274510000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,7 +71,7 @@
             <objects>
                 <navigationController id="ctY-ae-jGF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="球队" image="TeamTabIcon" id="Z7D-pI-zLb"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QRT-7I-LWY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="QRT-7I-LWY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,11 +93,11 @@
                         <viewControllerLayoutGuide type="bottom" id="iGf-z0-Xao"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LpS-fa-EgP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" id="FLh-lG-mFi"/>
+                    <tabBarItem key="tabBarItem" title="赛事" image="MatchTabIcon" selectedImage="ProfileTabIcon" id="FLh-lG-mFi"/>
                     <navigationItem key="navigationItem" title="EFA League" id="D4Q-sp-LKs">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="9Re-oV-0Bo">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -119,7 +120,7 @@
                         <viewControllerLayoutGuide type="bottom" id="DaR-jb-lUU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ByV-1K-8sp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -146,7 +147,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6TE-Wh-Hfe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7f2-EF-qkP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -172,11 +173,12 @@
                         <viewControllerLayoutGuide type="top" id="egX-i4-ra0"/>
                         <viewControllerLayoutGuide type="bottom" id="OYR-kK-zar"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XhJ-Km-9vb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="XhJ-Km-9vb">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="首页" image="MainTabIcon" id="E8u-wh-jyc"/>
                     <navigationItem key="navigationItem" title="EFA League" id="F3h-sX-jnG">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="iuA-Sj-9Hn">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,10 +197,10 @@
             <objects>
                 <navigationController id="gtD-ad-ael" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="MainTabIcon" id="iKH-gU-nzj"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AMC-wL-LEL">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="AMC-wL-LEL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.070588235294117646" green="0.15686274509803921" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="hlG-in-7T0" kind="relationship" relationship="rootViewController" id="SDe-Ft-wcv"/>
@@ -210,9 +212,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MainTabIcon" width="25" height="25"/>
-        <image name="MatchTabIcon" width="25" height="25"/>
-        <image name="ProfileTabIcon" width="25" height="25"/>
-        <image name="TeamTabIcon" width="25" height="25"/>
+        <image name="MainTabIcon" width="132" height="132"/>
+        <image name="MatchTabIcon" width="66" height="66"/>
+        <image name="ProfileTabIcon" width="66" height="66"/>
+        <image name="TeamTabIcon" width="66" height="66"/>
     </resources>
 </document>

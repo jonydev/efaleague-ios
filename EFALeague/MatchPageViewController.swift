@@ -25,6 +25,10 @@ class MatchPageViewController : UIViewController, WKScriptMessageHandler {
         
         webView = WKWebView(frame: UIScreen.main.bounds, configuration: webViewConfig)
         view = webView
+        
+        let image = UIImage(named: "NavigationImage")
+        let imageView = UIImageView(image: image)
+        navigationItem.titleView = imageView
     }
     
     override func viewDidLoad() {

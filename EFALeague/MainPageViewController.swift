@@ -22,9 +22,14 @@ class MainPageViewController : UIViewController, WKScriptMessageHandler {
         
         let webViewConfig = WKWebViewConfiguration()
         webViewConfig.userContentController = contentController
-        
         webView = WKWebView(frame: UIScreen.main.bounds, configuration: webViewConfig)
         view = webView
+        
+        let image = UIImage(named: "NavigationImage")
+        let imageView = UIImageView(image: image)
+        navigationItem.titleView = imageView
+        
+
     }
     
     override func viewDidLoad() {

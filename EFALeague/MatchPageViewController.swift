@@ -42,7 +42,7 @@ class MatchPageViewController : UIViewController, WKScriptMessageHandler {
     
     @IBAction func onBackCallBack() {
         if(webView?.canGoBack)! {
-            webView?.goBack()
+            webView!.goBack()
         }
     }
 }

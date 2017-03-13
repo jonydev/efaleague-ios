@@ -21,7 +21,6 @@ class TeamPageViewController : UIViewController, WKScriptMessageHandler {
         
         let webViewConfig = WKWebViewConfiguration()
         webViewConfig.userContentController = contentController
-        
         webView = WKWebView(frame: UIScreen.main.bounds, configuration: webViewConfig)
         view = webView
         
@@ -32,7 +31,6 @@ class TeamPageViewController : UIViewController, WKScriptMessageHandler {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar
         webView!.load(URLRequest(url: URL(string: homeUrl)!))
     }
     
@@ -41,7 +39,7 @@ class TeamPageViewController : UIViewController, WKScriptMessageHandler {
     
     @IBAction func onBackCallBack() {
         if(webView?.canGoBack)! {
-            webView?.goBack()
+            webView!.goBack()
         }
     }
 }

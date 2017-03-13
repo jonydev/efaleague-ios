@@ -56,7 +56,7 @@ class MainPageViewController : UIViewController, WKScriptMessageHandler {
     @IBAction func onBackCallBack() {
         print("goBack click")
         if(webView?.canGoBack)! {
-            webView?.goBack()
+            webView!.goBack()
         }
     }
 }

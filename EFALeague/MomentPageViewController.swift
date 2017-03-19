@@ -1,8 +1,8 @@
 //
-//  TeamPageViewController.swift
+//  MomentPageViewController.swift
 //  EFALeague
 //
-//  Created by Zhou Huang on 15/01/2017.
+//  Created by Zhou Huang on 19/03/2017.
 //  Copyright © 2017 Jonyzz. All rights reserved.
 //
 
@@ -10,10 +10,11 @@ import Foundation
 import  UIKit
 import WebKit
 
-class TeamPageViewController : UIViewController, WKScriptMessageHandler {
+class MomentPageViewController : UIViewController, WKScriptMessageHandler {
     var webView: WKWebView?
     var contentCallback : String = "MomentPageViewCallBack"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/moment.html"
+    var createArticle : String = "http://120.76.206.174:8080/efafootball-web/moment-new.html"
     
     override func loadView() {
         let contentController = WKUserContentController()
@@ -41,5 +42,9 @@ class TeamPageViewController : UIViewController, WKScriptMessageHandler {
         if(webView?.canGoBack)! {
             webView!.goBack()
         }
+    }
+    
+    @IBAction func onCreateArticle() {
+        webView!.load(URLRequest(url: URL(string: createArticle)!))
     }
 }

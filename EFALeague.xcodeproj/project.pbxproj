@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75631FA21E7ED88A0087F03E /* MomentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75631FA11E7ED88A0087F03E /* MomentPageViewController.swift */; };
 		7566F2D21E2B27A50082CF28 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566F2D11E2B27A50082CF28 /* MainPageViewController.swift */; };
 		7566F2D41E2B396B0082CF28 /* MatchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566F2D31E2B396B0082CF28 /* MatchPageViewController.swift */; };
 		7566F2D61E2B3A4D0082CF28 /* TeamPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7566F2D51E2B3A4D0082CF28 /* TeamPageViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75631FA11E7ED88A0087F03E /* MomentPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MomentPageViewController.swift; sourceTree = "<group>"; };
 		7566F2D11E2B27A50082CF28 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		7566F2D31E2B396B0082CF28 /* MatchPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPageViewController.swift; sourceTree = "<group>"; };
 		7566F2D51E2B3A4D0082CF28 /* TeamPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamPageViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				75DF42FC1E27ED67005C5B50 /* Info.plist */,
 				7566F2D11E2B27A50082CF28 /* MainPageViewController.swift */,
 				7566F2D31E2B396B0082CF28 /* MatchPageViewController.swift */,
+				75631FA11E7ED88A0087F03E /* MomentPageViewController.swift */,
 			);
 			path = EFALeague;
 			sourceTree = "<group>";
@@ -204,6 +207,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = R325R48X9N;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					75DF43001E27ED67005C5B50 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -276,6 +284,7 @@
 				7566F2D41E2B396B0082CF28 /* MatchPageViewController.swift in Sources */,
 				7566F2D61E2B3A4D0082CF28 /* TeamPageViewController.swift in Sources */,
 				75DF42F11E27ED67005C5B50 /* AppDelegate.swift in Sources */,
+				75631FA21E7ED88A0087F03E /* MomentPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

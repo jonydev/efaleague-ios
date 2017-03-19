@@ -66,11 +66,11 @@
             </objects>
             <point key="canvasLocation" x="-1934" y="1049"/>
         </scene>
-        <!--球队-->
+        <!--讨论区-->
         <scene sceneID="ETO-zH-Haj">
             <objects>
                 <navigationController id="ctY-ae-jGF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="球队" image="TeamTabIcon" id="Z7D-pI-zLb"/>
+                    <tabBarItem key="tabBarItem" title="讨论区" image="TeamTabIcon" id="Z7D-pI-zLb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="QRT-7I-LWY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -114,7 +114,7 @@
         <!--EFA League-->
         <scene sceneID="neN-Ac-WYK">
             <objects>
-                <viewController id="Qvb-gu-8xO" customClass="TeamPageViewController" customModule="EFALeague" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qvb-gu-8xO" customClass="MomentPageViewController" customModule="EFALeague" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jbn-90-iZa"/>
                         <viewControllerLayoutGuide type="bottom" id="DaR-jb-lUU"/>
@@ -130,6 +130,12 @@
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="onBackCallBack" destination="Qvb-gu-8xO" id="FzT-iG-QAj"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="29K-tB-MJc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="onCreateArticle" destination="Qvb-gu-8xO" id="DQf-bN-Q8b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

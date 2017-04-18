@@ -10,7 +10,7 @@ import Foundation
 import  UIKit
 import WebKit
 
-class MomentPageViewController : UIViewController, WKScriptMessageHandler {
+class MomentPageViewController : UIViewController, WKScriptMessageHandler, WKUIDelegate, WKNavigationDelegate {
     var webView: WKWebView?
     var contentCallback : String = "MomentPageViewCallBack"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/moment.html"
@@ -24,6 +24,8 @@ class MomentPageViewController : UIViewController, WKScriptMessageHandler {
         webViewConfig.userContentController = contentController
         webView = WKWebView(frame: UIScreen.main.bounds, configuration: webViewConfig)
         view = webView
+        self.webView?.navigationDelegate = self
+        self.webView?.uiDelegate = self
         
         let image = UIImage(named: "NavigationImage")
         let imageView = UIImageView(image: image)
@@ -32,7 +34,7 @@ class MomentPageViewController : UIViewController, WKScriptMessageHandler {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        webView!.load(URLRequest(url: URL(string: homeUrl)!))
+        self.webView!.load(URLRequest(url: URL(string: homeUrl)!))
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
@@ -47,4 +49,20 @@ class MomentPageViewController : UIViewController, WKScriptMessageHandler {
     @IBAction func onCreateArticle() {
         webView!.load(URLRequest(url: URL(string: createArticle)!))
     }
+    
+    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+        
+        let alert = UIAlertController(title: "提醒", message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "知道了", style:
+        .cancel) { (action) in
+            
+            completionHandler()
+        }
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+    }
 }
+

@@ -10,7 +10,7 @@ import Foundation
 import  UIKit
 import WebKit
 
-class TeamPageViewController : UIViewController, WKScriptMessageHandler {
+class TeamPageViewController : BaseController, WKScriptMessageHandler {
     var webView: WKWebView?
     var contentCallback : String = "MomentPageViewCallBack"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/moment.html"
@@ -23,6 +23,8 @@ class TeamPageViewController : UIViewController, WKScriptMessageHandler {
         webViewConfig.userContentController = contentController
         webView = WKWebView(frame: UIScreen.main.bounds, configuration: webViewConfig)
         view = webView
+        self.webView?.navigationDelegate = self
+        self.webView?.uiDelegate = self
         
         let image = UIImage(named: "NavigationImage")
         let imageView = UIImageView(image: image)

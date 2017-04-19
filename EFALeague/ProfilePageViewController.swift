@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import WebKit
 
-class ProfilePageViewControll : UIViewController, WKScriptMessageHandler {
+class ProfilePageViewControll : BaseController, WKScriptMessageHandler {
     var webView: WKWebView?
     var contentCallback : String = "ProfilePageViewCallBack"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/mine.html"
@@ -24,6 +24,8 @@ class ProfilePageViewControll : UIViewController, WKScriptMessageHandler {
         
         webView = WKWebView(frame: UIScreen.main.bounds, configuration: webViewConfig)
         view = webView
+        self.webView?.navigationDelegate = self
+        self.webView?.uiDelegate = self
         
         let image = UIImage(named: "NavigationImage")
         let imageView = UIImageView(image: image)

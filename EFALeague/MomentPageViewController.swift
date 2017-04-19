@@ -10,7 +10,7 @@ import Foundation
 import  UIKit
 import WebKit
 
-class MomentPageViewController : UIViewController, WKScriptMessageHandler, WKUIDelegate, WKNavigationDelegate {
+class MomentPageViewController : BaseController, WKScriptMessageHandler {
     var webView: WKWebView?
     var contentCallback : String = "MomentPageViewCallBack"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/moment.html"
@@ -48,21 +48,6 @@ class MomentPageViewController : UIViewController, WKScriptMessageHandler, WKUID
     
     @IBAction func onCreateArticle() {
         webView!.load(URLRequest(url: URL(string: createArticle)!))
-    }
-    
-    func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
-        
-        let alert = UIAlertController(title: "提醒", message: message, preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "知道了", style:
-        .cancel) { (action) in
-            
-            completionHandler()
-        }
-        
-        alert.addAction(action)
-        
-        present(alert, animated: true, completion: nil)
     }
 }
 

@@ -11,7 +11,7 @@ import Foundation
 import  UIKit
 import WebKit
 
-class MatchPageViewController : UIViewController, WKScriptMessageHandler {
+class MatchPageViewController : BaseController, WKScriptMessageHandler {
     var webView: WKWebView?
     var contentCallback : String = "MainPageViewCallBack"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/match.html"
@@ -24,6 +24,8 @@ class MatchPageViewController : UIViewController, WKScriptMessageHandler {
         webViewConfig.userContentController = contentController
         
         webView = WKWebView(frame: UIScreen.main.bounds, configuration: webViewConfig)
+        self.webView?.navigationDelegate = self
+        self.webView?.uiDelegate = self
         view = webView
         
         let image = UIImage(named: "NavigationImage")

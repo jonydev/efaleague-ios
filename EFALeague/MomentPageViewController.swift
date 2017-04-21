@@ -12,7 +12,7 @@ import WebKit
 
 class MomentPageViewController : BaseController, WKScriptMessageHandler {
     var webView: WKWebView?
-    var contentCallback : String = "MomentPageViewCallBack"
+    var contentCallback : String = "callbackHandler"
     var homeUrl : String = "http://120.76.206.174:8080/efafootball-web/moment.html"
     var createArticle : String = "http://120.76.206.174:8080/efafootball-web/moment-new.html"
     
@@ -38,6 +38,17 @@ class MomentPageViewController : BaseController, WKScriptMessageHandler {
     }
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        NSLog("javascript call success")
+        if let messageBody:NSDictionary = message.body as? NSDictionary {
+            let functionToRun = String(describing: messageBody.value(forKey: "functionToRun")!);
+            switch(functionToRun) {
+            case "loadView":
+                NSLog ("loadView")
+                self.webView!.load(URLRequest(url: URL(string: homeUrl)!))
+            default:
+                return {}();
+            }
+        }
     }
     
     @IBAction func onBackCallBack() {
